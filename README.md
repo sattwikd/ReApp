@@ -10,3 +10,6 @@ Reader's App-> An Ecommerce application for Books
 * Python Flask for backend coding
 * Search functionality works with Beautiful Soup Web scraping logic
 * SQL Lite used for storing and returning search data
+
+Update as of `Version 1.0.1`
+* Created a Django based framework of the App
