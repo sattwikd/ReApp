@@ -1,0 +1,42 @@
+.tag h2{
+	font-family: "Bookman Old Style", serif;
+	font-size: 20px;
+	margin-left: 250px;
+	margin-right: 700px;
+	padding: 10px;
+	letter-spacing: 0.2em;
+	background-color: #696969;
+}
+
+
+.search-box {
+	margin-left: 250px;
+	margin-right:330px;
+	position: relative;
+	border:none;
+}
+
+.search-area {
+	width: 90%;
+	height: 40px;
+	border-top-left-radius:15px !important;
+	border-bottom-left-radius: 15px !important;
+	background: transparent;
+	outline: 0;
+	}
+
+.button {
+	float: left;
+	width:10%;
+	height: 45px;
+	border:none;
+	border-top-right-radius:15px;
+	border-bottom-right-radius: 15px;
+	position: absolute;
+	outline: 0;
+	cursor:pointer;
+}
+
+.button:hover {
+	background-color: lightblue;
+}

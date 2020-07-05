@@ -1,0 +1,110 @@
+ul {
+	list-style-type: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	color: blue;
+}
+a:hover {
+	color: orange;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-bar {
+display: flex;
+flex-direction: row;
+background-color: #696969;
+
+}
+
+.top-bar h2 a{
+margin-left: 100px;
+color: #FFFFFF;
+
+}
+
+.search-box {
+	margin-top: 25px;
+	margin-left: 250px;
+	margin-right:330px;
+	position: relative;
+	border:none;
+}
+
+.search-area {
+	width: 85%;
+	height: 20px;
+	border-top-left-radius:15px !important;
+	border-bottom-left-radius: 15px !important;
+	background: transparent;
+	background-color: #FFFFFF;
+	outline: 0;
+	}
+
+.button {
+	float: left;
+	width:15%;
+	height: 25px;
+	border:none;
+	border-top-right-radius:15px;
+	border-bottom-right-radius: 15px;
+	position: absolute;
+	outline: 0;
+	cursor:pointer;
+}
+.card-box {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.card {
+	width: 380px;
+	box-shadow:   0 2px 7px #dfdfdf;
+    position: relative;
+    margin: 50px auto;
+    margin-right:20px;
+    background: #fafafa;
+}
+
+.image {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="An E-commerce App for books">
+	<title>ReApp</title>
+</head>
+<body>
+	<h2>ReApp</h2>
+	<hr/>
+	<table>
+		<tr>
+			<th colspan="2">Product Name</th>
+			<th>Product Price</th>
+		</tr>
+	{% for item in data %}
+		<tr>
+			<td>{{item.Title}}</td>
+			<td>{{item.Price}}</td>
+		</tr>	
+	{% endfor  %}
+	</table>
+	<br/><br/><br/>
+	<form action="placeorder" method="post">
+		<input type="text" class="cust-name" name="Name" placeholder="Enter your Name"><br/>
+		<input type="text" class="cust-phone" name="Phone" placeholder="Enter your Phone number"><br/>
+		<input type="textarea" class="cust-address" name="Address" placeholder="Enter your full Address"><br/>
+		<input type="submit" value="Place Order">
+	</form>
+	<br/><br/><br/>
+	<a href = "./index.html">Home</a>
+</body>
+</html>

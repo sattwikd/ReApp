@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="An E-commerce App for books">
+	<title>ReApp</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'reapp/search-result.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="top-bar">
+		<h2>
+			<a href = "/reapp">ReApp</a>
+		</h2>
+		<div class="search-box">
+			<form action="search" method="post">
+				<input type="text" class="search-area" name="search-text">
+				<button type="search" class="button"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+	<ul>
+		<div class="card-box">
+	{% for item in result_list %}
+			<li>
+				<div class="card">
+					<div class="image">
+						<img src={{item.image_link}}>
+					</div>
+					<div class="product-details">
+					    <div class="title">
+							<h4><a href='/reapp/order?id={{item.id}}'>{{item.name}}</a></h4>
+						</div>
+						<div class="product-bottom-details">
+							<div class="price">
+								<span>INR {{item.price}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>	
+	{% endfor  %}
+		</div>
+	</ul>
+</body>
+</html>

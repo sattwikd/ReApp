@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="An E-commerce App for books">
+	<title>ReApp</title>
+</head>
+<body>
+	<h2>ReApp</h2>
+	<hr/>
+	<ul>
+	{% for item in data %}
+		<li><a href="./order?id={{loop.index0}}">{{item.Title}}</a></li>	
+	{% endfor  %}
+	</ul>
+	<br/><br/><br/>
+	<a href = "./index.html">Home</a>
+</body>
+</html>
